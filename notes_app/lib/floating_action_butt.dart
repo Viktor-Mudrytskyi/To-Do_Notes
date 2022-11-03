@@ -65,11 +65,13 @@ class CustomFloatButt extends StatelessWidget {
                       onPressed: (isActive)
                           ? () {
                               box.add(finalData);
-                              Navigator.push(
+                              Navigator.pop(context);
+                              Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute<void>(
                                       builder: (BuildContext context) =>
                                           const MyNotes()));
+                              
                             }
                           : null,
                       child: const Text('Add'),
