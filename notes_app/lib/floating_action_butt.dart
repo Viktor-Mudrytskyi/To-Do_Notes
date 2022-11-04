@@ -71,7 +71,6 @@ class CustomFloatButt extends StatelessWidget {
                                   MaterialPageRoute<void>(
                                       builder: (BuildContext context) =>
                                           const MyNotes()));
-                              
                             }
                           : null,
                       child: const Text('Add'),

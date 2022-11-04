@@ -47,6 +47,7 @@ class _MyNotesState extends State<MyNotes> {
           itemBuilder: (BuildContext context, int index) {
             return Dismissible(
               key: Key("$index"),
+              direction: DismissDirection.startToEnd,
               onDismissed: (direction) {
                 setState(
                   () {
@@ -61,13 +62,13 @@ class _MyNotesState extends State<MyNotes> {
                   color: Colors.black,
                 ),
               ),
-              secondaryBackground: Container(
-                color: Colors.amber.shade900,
-                child: const Icon(
-                  Icons.remove_circle,
-                  color: Colors.black,
-                ),
-              ),
+              // secondaryBackground: Container(
+              //   color: Colors.amber.shade900,
+              //   child: const Icon(
+              //     Icons.remove_circle,
+              //     color: Colors.black,
+              //   ),
+              // ),
               child: Card(
                 elevation: 4.0,
                 margin: const EdgeInsets.all(8.0),
